@@ -85,7 +85,7 @@ public class aiTransferService implements IAiTransferService {
             // 构建系统角色消息，定义助手的行为目标
             Message systemMsg = Message.builder()
                     .role(Role.SYSTEM.getValue())
-                    .content("你是由一个题目题干提取助手，善于从大段文字中提取出第一个出现的完整题目。")
+                    .content("你是一个题目题干提取助手，善于从大段文字中提取出第一个出现的完整题目。")
                     .build();
 
             // 构建用户消息，将提示词与实际内容拼接传入
