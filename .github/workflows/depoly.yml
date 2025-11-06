@@ -58,6 +58,10 @@ jobs:
           script: |
             set -e
             cd /refine
+            echo "pulling latest code..."
+            git pull
+            git checkout develop
+            echo "pull completed."
             echo "Deploying..."
             sh build.sh base && sh build.sh services
             echo "Deployment completed."
