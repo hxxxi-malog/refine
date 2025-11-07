@@ -1,7 +1,7 @@
 package com.achobeta.domain.ocr.service.impl;
 
 import cn.hutool.core.lang.UUID;
-import com.achobeta.domain.ai.service.IAiTransferService;
+import com.achobeta.domain.ai.service.IAiService;
 import com.achobeta.domain.ocr.adapter.port.IFilePreprocessPort;
 import com.achobeta.domain.ocr.adapter.port.IOcrPort;
 import com.achobeta.domain.ocr.service.IOcrService;
@@ -22,7 +22,7 @@ public class DefaultOcrService implements IOcrService {
 
     private final IFilePreprocessPort filePreprocessPort;
     private final IOcrPort ocrPort;
-    private final IAiTransferService aiTransferService;
+    private final IAiService aiTransferService;
 
     /**
      * 抽取第一个问题
