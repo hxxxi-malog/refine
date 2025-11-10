@@ -18,6 +18,9 @@ public class MistakeQuestion {
     /** 逻辑外键：关联UserInformation表的user_id */
     private String userId;
 
+    /** 题目ID */
+    private String questionId;
+
     /** 题目内容 */
     private String questionContent;
 
